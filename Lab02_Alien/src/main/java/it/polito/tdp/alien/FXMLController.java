@@ -72,7 +72,8 @@ public class FXMLController {
     		back = this.model.search(a[0]);
     		if(back!="Parola non trovata\n") {
     			this.model.update(a[0], a[1]);
-    			this.txtView.appendText("La parola è stata aggiornata");
+    			this.txtView.appendText("La traduzione è stata aggiunta\n");
+    			this.txtInsert.clear();
     			return;
     		}
     		
